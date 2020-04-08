@@ -7,10 +7,10 @@ const Routing = () => {
     return (
         <BrowserRouter>
             <div>
-                <nav classNameName="navbar navbar-inverse">
-                    <div classNameName="container-fluid">
-                        <div classNameName="navbar-header">
-                            <a className="navbar-brand" href="#">Employee Management</a>
+                <nav className="navbar navbar-inverse">
+                    <div className="container-fluid">
+                        <div className="navbar-header">
+                            <a className="navbar-brand" href="/emp">Employee Management</a>
                         </div>
                         <ul className="nav navbar-nav">
                             <li><Link to="/">Home</Link></li>
