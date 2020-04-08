@@ -3,7 +3,6 @@ import React from 'react';
 const Home= ()=>{
     return(
         <div className="panel panel-primary">
-            <div className="panel-heading">Home</div>
             <div className="panel-body">
               <div className="jumbotron">
               <h2>Home Page</h2>
