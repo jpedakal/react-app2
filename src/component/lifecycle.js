@@ -7,17 +7,21 @@
 import React, { Component } from 'react';
 
 class LifeCycle extends Component {
-    // Get default state
+    //1. Get default state
     constructor(props) {
         super(props)
 
-        // Set Default state
+        //2. Set Default state
         this.state={
             title: "React App"
         }
     }
-    
-    // render
+    //3. Before get create
+    componentWillMount(){
+
+    }
+
+    //4. render
     render() {
         return (
             <div>
