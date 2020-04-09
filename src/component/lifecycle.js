@@ -1,11 +1,40 @@
-import React from 'react';
+//1. Get default state
+//2. Set Default State
+//3. Before get create
+//4. render
+//5. After get created
 
-const LifeCycle = () => {
-    return (
-        <div>
-            <h3>Life cycle page</h3>
-        </div>
-    )
+import React, { Component } from 'react';
+
+class LifeCycle extends Component {
+    //1. Get default state
+    constructor(props) {
+        super(props)
+
+        //2. Set Default state
+        this.state = {
+            title: "React App"
+        }
+    }
+    //3. Before get create
+    componentWillMount() {
+        console.log("Before created");
+    }
+
+    //4. render
+    render() {
+        console.log("render");
+        return (
+            <div>
+                <h3>{this.state.title}</h3>
+            </div>
+        )
+    }
+
+    // After get created
+    componentDidMount() {
+        console.log("After created");
+    }
 }
 
 export default LifeCycle; 
