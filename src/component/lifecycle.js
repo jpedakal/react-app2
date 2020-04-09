@@ -12,13 +12,13 @@ class LifeCycle extends Component {
         super(props)
 
         //2. Set Default state
-        this.state={
+        this.state = {
             title: "React App"
         }
     }
     //3. Before get create
-    componentWillMount(){
-
+    componentWillMount() {
+        console.log("Before created");
     }
 
     //4. render
@@ -28,6 +28,10 @@ class LifeCycle extends Component {
                 <h3>{this.state.title}</h3>
             </div>
         )
+    }
+
+    componentDidMount() {
+        console.log("After created");
     }
 }
 
