@@ -4,13 +4,16 @@
 //4. render
 //5. After get created
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-class LifeCycle extends Component{
-    render(){
-        return(
+class LifeCycle extends Component {
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        return (
             <div>
-              <h3>LifeCycle</h3>
+                <h3>LifeCycle</h3>
             </div>
         )
     }
