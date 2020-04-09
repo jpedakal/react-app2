@@ -1,11 +1,19 @@
-import React from 'react';
+//1. Get default state
+//2. Set Default State
+//3. Before get create
+//4. render
+//5. After get created
 
-const LifeCycle = () => {
-    return (
-        <div>
-            <h3>Life cycle page</h3>
-        </div>
-    )
+import React, {Component} from 'react';
+
+class LifeCycle extends Component{
+    render(){
+        return(
+            <div>
+              <h3>LifeCycle</h3>
+            </div>
+        )
+    }
 }
 
 export default LifeCycle; 
