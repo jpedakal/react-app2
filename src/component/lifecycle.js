@@ -8,4 +8,4 @@ const LifeCycle = () => {
     )
 }
 
-export default LifeCycle;
+export default LifeCycle; 

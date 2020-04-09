@@ -5,8 +5,8 @@ const Profile = () => {
         <div className="panel panel-primary">
             <div className="panel-body">
                 <div className="jumbotron">
-                <h2>Profile Page</h2>
-                <p>Profile is simply dummy text of the printing and typesetting industry.</p>
+                    <h2>Profile Page</h2>
+                    <p>Profile is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
         </div>
