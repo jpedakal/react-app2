@@ -23,6 +23,7 @@ class LifeCycle extends Component {
 
     //4. render
     render() {
+        console.log("render");
         return (
             <div>
                 <h3>{this.state.title}</h3>
@@ -30,6 +31,7 @@ class LifeCycle extends Component {
         )
     }
 
+    // After get created
     componentDidMount() {
         console.log("After created");
     }
