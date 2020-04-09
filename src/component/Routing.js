@@ -19,7 +19,6 @@ const Routing = () => {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/profile">Profile</Link></li>
                             <li><Link to="/post">Post</Link></li>
-                            <li><Link to="/post_details">PostDetails</Link> </li>
                             <li><Link to="/life_cycle">LifeCycle</Link></li>
                         </ul>
                     </div>
@@ -27,7 +26,7 @@ const Routing = () => {
                 <Route exact path="/" component={Home}></Route>
                 <Route path="/profile" component={Profile}></Route>
                 <Route path="/post" component={Post}></Route>
-                <Route path="/post_details" component={PostDetails}></Route>
+                <Route path="/posts/:topic" component={PostDetails}></Route>
                 <Route path="/life_cycle" component={LifeCycle}></Route>
             </div>
         </BrowserRouter>
