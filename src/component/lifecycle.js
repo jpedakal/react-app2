@@ -19,7 +19,15 @@ class LifeCycle extends Component {
     }
     //3. Before get create
     componentWillMount() {
-        console.log("Before created");
+        console.log("componentWillMount");
+    }
+
+    componentWillUpdate(){
+       console.log("componentWillUpdate");
+    }
+
+    componentDidUpdate(){
+        console.log("componentDidUpdate");
     }
 
     //4. render
@@ -37,7 +45,7 @@ class LifeCycle extends Component {
 
     // After get created
     componentDidMount() {
-        console.log("After created");
+        console.log("componentDidMount");
     }
 }
 
