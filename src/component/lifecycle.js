@@ -16,19 +16,30 @@ class LifeCycle extends Component {
         this.state = {
             title: "React App"
         }
-    }
+    };
+    
     //3. Before get create
-    componentWillMount() {
+   UNSAFE_componentWillMount() {
         console.log("componentWillMount");
-    }
+    };
 
-    componentWillUpdate(){
-       console.log("componentWillUpdate");
-    }
+    UNSAFE_componentWillUpdate() {
+        console.log("componentWillUpdate");
+    };
 
-    componentDidUpdate(){
+    componentDidUpdate() {
         console.log("componentDidUpdate");
-    }
+    };
+
+    // stop re-render
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log("shouldComponentUpdate");
+        if (nextState.title === this.state.title) {
+            return false
+        } else {
+            return true
+        }
+    };
 
     //4. render
     render() {
@@ -41,12 +52,17 @@ class LifeCycle extends Component {
                 </div>
             </div>
         )
-    }
+    };
 
     // After get created
     componentDidMount() {
         console.log("componentDidMount");
-    }
-}
+    };
+
+    // When we loose the scope
+    componentWillUnmount(){
+        console.log("componentWillUnmount");
+    };
+};
 
 export default LifeCycle; 
