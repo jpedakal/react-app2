@@ -57,6 +57,11 @@ class LifeCycle extends Component {
     componentDidMount() {
         console.log("componentDidMount");
     }
+
+    // When we loose the scope
+    componentWillUnmount(){
+        console.log("componentWillUnmount");
+    }
 }
 
 export default LifeCycle; 
