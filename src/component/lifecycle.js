@@ -18,11 +18,11 @@ class LifeCycle extends Component {
         }
     }
     //3. Before get create
-    componentWillMount() {
+   UNSAFE_componentWillMount() {
         console.log("componentWillMount");
     }
 
-    componentWillUpdate() {
+    UNSAFE_componentWillUpdate() {
         console.log("componentWillUpdate");
     }
 
