@@ -28,6 +28,9 @@ class LifeCycle extends Component {
         return (
             <div>
                 <h3>{this.state.title}</h3>
+                <div className="btn btn-success" onClick={() => { this.setState({ title: "Something else" }) }}>
+                    Click
+                </div>
             </div>
         )
     }
