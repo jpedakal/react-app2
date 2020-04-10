@@ -7,6 +7,12 @@
 import React, { Component } from 'react';
 
 class LifeCycle extends Component {
+
+    // After get created
+    componentDidMount() {
+        console.log("After created");
+    }
+    
     //1. Get default state
     constructor(props) {
         super(props)
@@ -31,10 +37,7 @@ class LifeCycle extends Component {
         )
     }
 
-    // After get created
-    componentDidMount() {
-        console.log("After created");
-    }
+    
 }
 
 export default LifeCycle; 
