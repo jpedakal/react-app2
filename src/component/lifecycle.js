@@ -22,12 +22,21 @@ class LifeCycle extends Component {
         console.log("componentWillMount");
     }
 
-    componentWillUpdate(){
-       console.log("componentWillUpdate");
+    componentWillUpdate() {
+        console.log("componentWillUpdate");
     }
 
-    componentDidUpdate(){
+    componentDidUpdate() {
         console.log("componentDidUpdate");
+    }
+
+    // stop re-render
+    shouldComponentUpdate(nextProps, nextState) {
+        if (nextState.title === this.state.title) {
+            return false
+        } else {
+            return true
+        }
     }
 
     //4. render
