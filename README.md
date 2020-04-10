@@ -1,5 +1,7 @@
 Topics covered in this app
-* Routing
+* Route
+* Link
+* BrowserRouter
 * UNSAFE_componentWillMount
 * UNSAFE_componentWillUpdate
 * componentDidMount
