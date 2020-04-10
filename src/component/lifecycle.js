@@ -19,7 +19,15 @@ class LifeCycle extends Component {
     }
     //3. Before get create
     componentWillMount() {
-        console.log("Before created");
+        console.log("componentWillMount");
+    }
+
+    componentWillUpdate(){
+       console.log("componentWillUpdate");
+    }
+
+    componentDidUpdate(){
+        console.log("componentDidUpdate");
     }
 
     //4. render
@@ -28,13 +36,16 @@ class LifeCycle extends Component {
         return (
             <div>
                 <h3>{this.state.title}</h3>
+                <div className="btn btn-success" onClick={() => { this.setState({ title: "Something else" }) }}>
+                    Click
+                </div>
             </div>
         )
     }
 
     // After get created
     componentDidMount() {
-        console.log("After created");
+        console.log("componentDidMount");
     }
 }
 
