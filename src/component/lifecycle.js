@@ -17,7 +17,7 @@ class LifeCycle extends Component {
             title: "React App"
         }
     };
-    
+
     //3. Before get create
    UNSAFE_componentWillMount() {
         console.log("componentWillMount");
