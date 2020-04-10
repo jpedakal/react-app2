@@ -32,6 +32,7 @@ class LifeCycle extends Component {
 
     // stop re-render
     shouldComponentUpdate(nextProps, nextState) {
+        console.log("shouldComponentUpdate");
         if (nextState.title === this.state.title) {
             return false
         } else {
