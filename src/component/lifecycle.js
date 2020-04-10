@@ -16,11 +16,12 @@ class LifeCycle extends Component {
         this.state = {
             title: "React App"
         }
-    }
+    };
+    
     //3. Before get create
    UNSAFE_componentWillMount() {
         console.log("componentWillMount");
-    }
+    };
 
     UNSAFE_componentWillUpdate() {
         console.log("componentWillUpdate");
