@@ -24,11 +24,11 @@ class LifeCycle extends Component {
 
     UNSAFE_componentWillUpdate() {
         console.log("componentWillUpdate");
-    }
+    };
 
     componentDidUpdate() {
         console.log("componentDidUpdate");
-    }
+    };
 
     // stop re-render
     shouldComponentUpdate(nextProps, nextState) {
@@ -38,7 +38,7 @@ class LifeCycle extends Component {
         } else {
             return true
         }
-    }
+    };
 
     //4. render
     render() {
@@ -51,17 +51,17 @@ class LifeCycle extends Component {
                 </div>
             </div>
         )
-    }
+    };
 
     // After get created
     componentDidMount() {
         console.log("componentDidMount");
-    }
+    };
 
     // When we loose the scope
     componentWillUnmount(){
         console.log("componentWillUnmount");
-    }
-}
+    };
+};
 
 export default LifeCycle; 
